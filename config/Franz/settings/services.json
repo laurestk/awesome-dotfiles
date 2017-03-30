@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "notifications": true,
+      "count_message_direct": 0,
+      "count_message_indirect": 0,
+      "zoom": 0,
+      "showIndirectMessages": true,
+      "enabled": true,
+      "focusMode": true,
+      "id": "03ca344f-9118-635f-9ab2-146d0bc8b919",
+      "order": 1,
+      "service": "whatsapp",
+      "name": "",
+      "mute_audio": false,
+      "customURL": false
+    },
+    {
+      "notifications": true,
+      "count_message_direct": 0,
+      "count_message_indirect": 0,
+      "zoom": 0,
+      "showIndirectMessages": true,
+      "enabled": true,
+      "focusMode": true,
+      "id": "89333574-dc33-a687-9f54-ccc7c85ea7d4",
+      "order": 2,
+      "service": "telegram",
+      "name": "",
+      "mute_audio": false,
+      "customURL": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[Added Associations]
+application/x-blender=blender.desktop;
+image/svg+xml=inkscape.desktop;
+application/pdf=evince.desktop;
+text/plain=org.gnome.gedit.desktop;
+image/png=eog.desktop;

@@ -1,0 +1,65 @@
+set nocompatible
+call pathogen#infect()
+execute pathogen#infect()
+call pathogen#helptags()
+
+" General options
+set number
+set ruler
+set autoindent
+set smartindent
+set modeline
+set cursorline
+set title
+set encoding=utf-8
+filetype plugin indent on
+set ic is hls scs
+set spelllang=pt_br
+autocmd FileType tex setlocal spell spelllang=pt_br
+set spell
+colorscheme fahrenheit
+set background=dark
+highlight clear SpellBad
+highlight SpellBad term=reverse cterm=reverse
+filetype plugin on
+syntax on
+set timeoutlen=500
+set wildmenu
+set scrolloff=1
+set backspace=indent,eol,start
+
+" Use the same symbols as TextMate for tabstops and EOLs
+" See vimcasts.org/e/1
+set listchars=tab:?\ ,eol:?
+
+" Swap files are useful, but let's keep it organized
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
+
+" Key mappings
+:map <F4> :!lualatex -lualatex % 
+" Shorten size of indentation
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
+" po.vim variables
+
+" gui options
+if has('gui_running')
+  set guioptions-=r
+  set guioptions-=T
+  set guioptions-=m
+  set guifont=Fira\ Mono\ for\ Powerline\ 12
+  set background=dark
+  colorscheme fahrenheit
+endif
+
+" using 256 colors
+set t_Co=256
+"
+" online run airline
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+
